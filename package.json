@@ -1,0 +1,72 @@
+{
+  "name": "child",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:intranet": "vue-cli-service build --mode intranet",
+    "commit": "git-cz",
+    "eslint:check": "eslint '**'",
+    "eslint:fix": "eslint --fix '**'",
+    "gd": "git add .",
+    "prettier": "prettier --write --no-editorconfig --config-precedence file-override '**'"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "single-spa-vue": "^1.8.1",
+    "stats-webpack-plugin": "^0.7.0",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.2",
+    "vue-property-decorator": "^8.3.0",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@bhabgs/micro-util": "^0.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-router": "^4.2.0",
+    "@vue/cli-plugin-typescript": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "ant-design-vue": "^1.5.0",
+    "axios": "^0.19.2",
+    "babel-eslint": "^10.0.3",
+    "commitizen": "^4.0.3",
+    "commitlint-config-cz": "^0.13.1",
+    "cz-conventional-changelog": "^3.1.0",
+    "cz-customizable": "^6.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "filemanager-webpack-plugin": "^2.0.5",
+    "husky": "^4.2.3",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "prettier": "^1.19.1",
+    "systemjs-webpack-interop": "^2.0.0",
+    "typescript": "~3.7.5",
+    "vue-cli-plugin-aepe-lint": "^1.1.4",
+    "vue-eslint-parser": "^7.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
