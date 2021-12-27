@@ -8,3 +8,7 @@
  -->
 
 # vue2.0 ts template
+
+默认打包不使用CDN 修改 package.json 中 build
+"build": "vue-cli-service build", 改为
+"build": "vue-cli-service build --mode intranet",
